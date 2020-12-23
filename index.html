@@ -25,11 +25,12 @@
         bit8 = new sound("part1.mp3");
         bit9 = new sound("part2.mp3");
         bit10 = new sound("opnhat.mp3");
-        demo1= new sound("JBalvinWill.m4a");
-        demo2= new sound("Lil_Jon.m4a");
-        demo3= new sound("Magenta.m4a");
+        demo1= new sound("song1.mp3");
+        demo2= new sound("song2.mp3");
+        demo3= new sound("song3.mp3");
         demo4= new sound("sound.m4a");
-        demo =new sound("tink.wav")
+        demo =new sound("tink.wav");
+        tom = new sound("tom.wav");
       }
  
     function sound(src) {
@@ -63,6 +64,8 @@ function Push(){
   bit8.sound.pause();
   bit9.sound.pause();
   bit10.sound.pause();
+  Tom.sound.pause();
+
 }
 
 function Bittt(){
@@ -137,6 +140,10 @@ function Vie(){
   bit10.sound.play();
 }
 
+function Tom(){
+  tom.sound.play();
+}
+
 </script>
 
 <div class="wrap"> 
@@ -147,7 +154,7 @@ function Vie(){
 <ul class="menu">
   <li><a  onmousedown="Bitss()"  onmouseup="Bitss()">Drum</a></li>
   <li><a onmousedown="Title()" onmouseup="Title()" >Drum</a></li>
-  <li><a onmousedown="Demosssss()" onmouseup="Demosssss()">Drum</a></li>
+  <li><a onmousedown="Tom()" onmouseup="Tom()">Drum</a></li>
   <li><a onmousedown="Titless()" onmouseup="Titless()" >Car</a></li>
   <li><a onmousedown="Bit()" onmouseup="Bit()" >Drum</a></li>
   <li><a  onmousedown="Titles()" onmouseup="Titles()">Boom</a></li>
@@ -156,7 +163,7 @@ function Vie(){
   <li><a onmousedown="Bittt()"  onmouseup="Bittt()" >Tink</a></li>
   <li><a onmousedown="Titlesss()" onmouseup="Titlesss()" >Bom-Tom</a></li>
    <li><a  onmousedown="Demossss()" onmouseup="Demossss()">Song</a></li>
-  <li><a onmousedown="Demosss()" onmouseup="Demoss()" >Song</a></li>
+  <li><a onmousedown="Demosss()" onmouseup="Demosss()" >Song</a></li>
   <li><a onmousedown="Demoss()" onmouseup="Demoss()" >Song</a></li>
   <li><a onmousedown="Demos()" onmouseup="Demos()" >Song</a></li>
   <li><a onmousedown="Demo()" onmouseup="Demo()" >Song</a></li>
